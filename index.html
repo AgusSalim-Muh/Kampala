@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karang Taruna KAMPALA - Dukuh Plantungan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo & Brand -->
+          <div class="flex items-center space-x-3">
+            <img src="logo_kpl.png" alt="Logo KAMPALA" class="w-10 h-10 object-contain" />
+            <span class="font-bold text-lg text-emerald-950 tracking-tight"> KAMPALA <span class="text-xs block text-emerald-600 font-normal">Dukuh Plantungan</span> </span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <a href="#beranda" class="hover:text-emerald-600 transition">Beranda</a>
+            <a href="#tentang" class="hover:text-emerald-600 transition">Tentang Kami</a>
+            <a href="#pengurus" class="hover:text-emerald-600 transition">Struktur Pengurus</a>
+            <a href="#galeri" class="hover:text-emerald-600 transition">Galeri Kegiatan</a>
+            <a href="#program" class="hover:text-emerald-600 transition">Program Kerja</a>
+            <a href="#pengaduan" class="hover:text-emerald-600 transition">Layanan Warga</a>
+            <a href="#kontak" class="hover:text-emerald-600 transition">Kontak</a>
+          </div>
+
+          <!-- Desktop Action Button -->
+          <a href="#pengaduan" class="hidden sm:inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-700 transition shadow-sm">
+            <i class="fa-solid fa-paper-plane mr-2"></i> Lapor / Aspirasi
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <div class="flex md:hidden items-center">
+            <button id="mobile-menu-btn" type="button" class="text-gray-600 hover:text-emerald-600 focus:outline-none p-2 rounded-md" aria-label="Toggle Menu">
+              <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-4 space-y-3">
+        <a href="#beranda" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Beranda</a>
+        <a href="#tentang" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Tentang Kami</a>
+        <a href="#pengurus" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Struktur Pengurus</a>
+        <a href="#galeri" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Galeri Kegiatan</a>
+        <a href="#program" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Program Kerja</a>
+        <a href="#pengaduan" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Layanan Warga</a>
+        <a href="#kontak" class="mobile-link block text-gray-700 font-medium hover:text-emerald-600 py-1">Kontak</a>
+        <a href="#pengaduan" class="mobile-link inline-block w-full text-center px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-700 transition">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Lapor / Aspirasi
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-emerald-900 text-white py-20 lg:py-28 overflow-hidden">
+      <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-emerald-800 text-emerald-200 text-xs font-semibold rounded-full uppercase tracking-wider mb-4 border border-emerald-700"> Pemuda Dukuh Plantungan </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">Bersatu, Berkarya, dan Membangun Desa Krandon Lor</h1>
+          <p class="text-lg text-emerald-100 mb-8 leading-relaxed">Wadah kreativitas, kegotongroyongan, dan transparansi kegiatan pemuda Karang Taruna KAMPALA demi kemajuan Dukuh Plantungan.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#program" class="px-6 py-3 bg-white text-emerald-900 font-semibold rounded-lg shadow-md hover:bg-emerald-50 transition"> Lihat Program Kerja </a>
+            <a href="#pengaduan" class="px-6 py-3 bg-emerald-800 text-white font-semibold rounded-lg border border-emerald-700 hover:bg-emerald-700 transition"> Kanal Pengaduan Warga </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT STATISTIK -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+        <div class="flex items-center space-x-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+          <div class="p-3 bg-emerald-600 text-white rounded-lg"><i class="fa-solid fa-lightbulb text-2xl"></i></div>
+          <div>
+            <h4 class="font-bold text-gray-900">Program Jimpitan</h4>
+            <p class="text-xs text-gray-600">Penerangan Jalan Dukuh</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+          <div class="p-3 bg-emerald-600 text-white rounded-lg"><i class="fa-solid fa-users text-2xl"></i></div>
+          <div>
+            <h4 class="font-bold text-gray-900">Gotong Royong</h4>
+            <p class="text-xs text-gray-600">Kerja Bakti & Keagamaan</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+          <div class="p-3 bg-emerald-600 text-white rounded-lg"><i class="fa-solid fa-comments text-2xl"></i></div>
+          <div>
+            <h4 class="font-bold text-gray-900">Layanan Aspirasi</h4>
+            <p class="text-xs text-gray-600">Respon Cepat via WhatsApp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Tentang Karang Taruna KAMPALA</h2>
+        <p class="text-gray-600 mt-2">Organisasi kepemudaan Dukuh Plantungan, Desa Krandon Lor, Kecamatan Suruh, Kabupaten Semarang.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-emerald-50 p-8 rounded-2xl border border-emerald-100 flex items-center justify-center shadow-inner">
+          <img src="logo_kpl.png" alt="Logo Kampala" class="max-h-64 object-contain" />
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-emerald-950">Komitmen Membangun Dukuh Plantungan</h3>
+          <p class="text-gray-600 leading-relaxed text-sm">
+            Karang Taruna KAMPALA hadir sebagai wadah silaturahmi, pembinaan pemuda, dan penggerak kegiatan sosial kemasyarakatan. Kami berfokus pada transparansi program kerja dan aksi nyata untuk kesejahteraan warga.
+          </p>
+          <div class="space-y-2 pt-2">
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span class="text-sm text-gray-700">Pengelolaan dana jimpitan transparan untuk fasilitas umum.</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span class="text-sm text-gray-700">Pelaksanaan kegiatan sosial, keolahragaan, dan peringatan hari besar.</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span class="text-sm text-gray-700">Kanal komunikasi terbuka antara pemuda dan masyarakat dukuh.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRUKTUR ORGANISASI / STAFF KAMPALA -->
+    <section id="pengurus" class="py-16 bg-emerald-50/50 border-y border-emerald-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-emerald-700 font-semibold text-xs tracking-wider uppercase bg-emerald-100 px-3 py-1 rounded-full">Struktur Organisasi</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">Staff KAMPALA Periode 2026/2029</h2>
+          <p class="text-gray-600 text-sm mt-1">Pengurus Karang Taruna KAMPALA Dukuh Plantungan</p>
+        </div>
+
+        <!-- Penasehat Section -->
+        <div class="mb-10 text-center">
+          <div class="inline-block bg-emerald-900 text-white px-6 py-3 rounded-2xl shadow-md">
+            <span class="text-xs uppercase tracking-widest text-emerald-300 font-semibold block mb-1">Penasehat</span>
+            <p class="font-bold text-base">Kang Topa • Kang Din • Mas Arif</p>
+          </div>
+        </div>
+
+        <!-- Pimpinan Utama Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-200 text-center relative overflow-hidden">
+            <div class="w-2 h-full bg-emerald-600 absolute left-0 top-0"></div>
+            <span class="text-xs font-semibold text-emerald-600 uppercase">Ketua</span>
+            <h3 class="text-lg font-bold text-gray-900 mt-1">Agus Salim</h3>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-200 text-center relative overflow-hidden">
+            <div class="w-2 h-full bg-emerald-600 absolute left-0 top-0"></div>
+            <span class="text-xs font-semibold text-emerald-600 uppercase">Wakil Ketua</span>
+            <h3 class="text-lg font-bold text-gray-900 mt-1">Huda</h3>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-200 text-center relative overflow-hidden">
+            <div class="w-2 h-full bg-emerald-600 absolute left-0 top-0"></div>
+            <span class="text-xs font-semibold text-emerald-600 uppercase">Sekretaris</span>
+            <h3 class="text-base font-bold text-gray-900 mt-1">Vita, Ulya</h3>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-200 text-center relative overflow-hidden">
+            <div class="w-2 h-full bg-emerald-600 absolute left-0 top-0"></div>
+            <span class="text-xs font-semibold text-emerald-600 uppercase">Bendahara</span>
+            <h3 class="text-base font-bold text-gray-900 mt-1">Risma, Nisa, Istiqomah</h3>
+          </div>
+        </div>
+
+        <!-- Divisi & Seksi Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Humas 26 -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-bullhorn text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Humas 26</h4>
+            </div>
+            <p class="text-sm text-gray-600">Palupi, Dika, Alip, Adip</p>
+          </div>
+
+          <!-- Humas 27 -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-bullhorn text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Humas 27</h4>
+            </div>
+            <p class="text-sm text-gray-600">Fikri, Muzaki, Mas Rizal, Bima, Rizal</p>
+          </div>
+
+          <!-- Humas 28 -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-bullhorn text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Humas 28</h4>
+            </div>
+            <p class="text-sm text-gray-600">Fatkhur, Bintang, Ardan</p>
+          </div>
+
+          <!-- Seksi Peralatan -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-wrench text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Seksi Peralatan</h4>
+            </div>
+            <p class="text-sm text-gray-600">Taqin, Darwanto</p>
+          </div>
+
+          <!-- Seksi Olahraga -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-futbol text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Seksi Olahraga</h4>
+            </div>
+            <p class="text-sm text-gray-600">Barep, Makruf Gewol</p>
+          </div>
+
+          <!-- PDD -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-camera text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">PDD (Pubdok)</h4>
+            </div>
+            <p class="text-sm text-gray-600">Rifai Gupek, Lisa</p>
+          </div>
+
+          <!-- Seksi Agama -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-mosque text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Seksi Agama</h4>
+            </div>
+            <p class="text-sm text-gray-600">Mas Wawan, Mas Joko</p>
+          </div>
+
+          <!-- Seksi Kegiatan -->
+          <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 sm:col-span-2 lg:col-span-2">
+            <div class="flex items-center space-x-3 mb-2">
+              <i class="fa-solid fa-calendar-check text-emerald-600"></i>
+              <h4 class="font-bold text-gray-900">Seksi Kegiatan</h4>
+            </div>
+            <p class="text-sm text-gray-600">Mas Angga, Mbak Riski, Mbak Vina</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI DOKUMENTASI KEGIATAN -->
+    <section id="galeri" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-emerald-700 font-semibold text-xs tracking-wider uppercase bg-emerald-100 px-3 py-1 rounded-full">Dokumentasi</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">Galeri Kegiatan KAMPALA</h2>
+        <p class="text-gray-600 text-sm mt-1">Kumpulan momen kebersamaan dan aksi nyata pemuda Dukuh Plantungan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Foto 1: Agustus -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 group">
+          <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+            <img src="agustus.jpeg" alt="Kegiatan Kemerdekaan KAMPALA" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-gray-900 text-base mb-1">Peringatan Kemerdekaan (PHBN)</h3>
+            <p class="text-xs text-gray-600">Momen kebersamaan pemuda Karang Taruna KAMPALA dalam memeriahkan peringatan HUT RI.</p>
+          </div>
+        </div>
+
+        <!-- Foto 2: Sinoman -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 group">
+          <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+            <img src="sinoman.jpeg" alt="Kegiatan Sinoman Pemuda KAMPALA" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-gray-900 text-base mb-1">Kegiatan Sinoman Warga</h3>
+            <p class="text-xs text-gray-600">Aksi gotong royong pemuda dalam membantu hajatan dan kegiatan kemasyarakatan warga dukuh.</p>
+          </div>
+        </div>
+
+        <!-- Foto 3: Silaturahmi -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 group">
+          <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+            <img src="silaturahmi.jpeg" alt="Kegiatan Silaturahmi KAMPALA" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-gray-900 text-base mb-1">Silaturahmi Bersama</h3>
+            <p class="text-xs text-gray-600">Silaturahmi ke rumah warga untuk menjaga tali persaudaraan dan kekompakan warga dukuh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM KERJA UNGGULAN -->
+    <section id="program" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Program Kerja Utama</h2>
+          <p class="text-gray-600 mt-2">Kegiatan rutin dan program kerja berkesinambungan Karang Taruna KAMPALA.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Jimpitan & Penerangan Jalan</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">Penarikan dana jimpitan swadaya warga secara berkala yang dialokasikan khusus untuk perawatan, perbaikan, dan pemenuhan penerangan jalan utama dukuh.</p>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-md">Transparansi Dana</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+              <i class="fa-solid fa-hands-holding-child"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Kegiatan Sosial & Kerja Bakti</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">Aksi gotong royong pemeliharaan lingkungan dukuh, kegiatan keagamaan, serta aksi kepedulian sosial untuk membantu warga yang membutuhkan.</p>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-md">Kegiatan Rutin</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl font-bold mb-4">
+              <i class="fa-solid fa-flag"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Peringatan Hari Besar (PHBN/PHBI)</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">Penyelenggaraan berbagai perlombaan HUT RI, acara pentas seni pemuda, pengajian umum, serta peringatan hari besar keagamaan.</p>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-md">Event Tahunan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGADUAN & ASPIRASI WARGA -->
+    <section id="pengaduan" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-emerald-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="max-w-2xl relative z-10">
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Kanal Pengaduan & Aspirasi Warga</h2>
+          <p class="text-emerald-200 text-sm sm:text-base leading-relaxed mb-6">Menemukan lampu jalan mati, memiliki sarana yang perlu diperbaiki, atau punya ide kegiatan? Sampaikan langsung kepada pengurus Karang Taruna KAMPALA.</p>
+          <a
+            href="https://wa.me/6285815746745?text=Halo%20Karang%20Taruna%20KAMPALA,%20saya%20ingin%20menyampaikan%20aspirasi/laporan:"
+            target="_blank"
+            class="inline-flex items-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl shadow-lg transition"
+          >
+            <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Lapor via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER & KONTAK -->
+    <footer id="kontak" class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-3">
+            <img src="logo_kpl.jpg" alt="Logo KAMPALA" class="w-8 h-8 object-contain" />
+            <h3 class="text-white font-bold text-lg">Karang Taruna KAMPALA</h3>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">Dukuh Plantungan, Desa Krandon Lor, Kecamatan Suruh, Kabupaten Semarang, Jawa Tengah.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-3">Navigasi Cepat</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#tentang" class="hover:text-white transition">Tentang Kami</a></li>
+            <li><a href="#pengurus" class="hover:text-white transition">Struktur Pengurus</a></li>
+            <li><a href="#galeri" class="hover:text-white transition">Galeri Kegiatan</a></li>
+            <li><a href="#program" class="hover:text-white transition">Program Kerja</a></li>
+            <li><a href="#pengaduan" class="hover:text-white transition">Layanan Pengaduan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-3">Media Sosial</h4>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/kampala1995?dlrf=c2xuZmoyZ2UycXRs" class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/6285815746745" class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@kampala_1995?_r=1&_t=ZS-9B9YOGdxCYE" class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">&copy; 2026 Karang Taruna KAMPALA Dukuh Plantungan. All rights reserved.</div>
+    </footer>
+
+    <!-- JavaScript Toggle Mobile Navigation -->
+    <script>
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      // Toggle menu mobile saat tombol hamburger diklik
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        }
+      });
+
+      // Otomatis menutup menu mobile ketika salah satu link diklik
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        });
+      });
+    </script>
+  </body>
+</html>
